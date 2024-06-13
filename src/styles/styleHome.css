@@ -1,0 +1,89 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #d6d5d5;
+
+}
+.contenedorTarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cardContent{
+
+    width: 350px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #feab6b;
+    box-sizing: border-box;
+
+}
+
+
+.imgCard{
+    width: 100px;
+    height: 100px;
+    margin: 50px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img.imgProduct{
+    width: 250%;
+    height: 250%;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-top: 30px;
+ 
+
+    
+
+}
+.description{
+    height: 350px;
+    padding: 20px;
+    text-align: center;
+}
+
+.nombre{
+    font-family: "Madimi One", sans-serif;
+    font-size: 20px;
+    color: #004f81;
+    margin-top: 40%;
+}
+.tipo{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5px;
+}
+.more-info{
+    margin: 20px auto 5px;
+    padding: 10px 20px;
+    background-color: #e76f3d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Madimi One", sans-serif;
+    font-size: 15px;
+    display: block;
+
+}
+
+.more-info:hover{
+    background-color: #ffac3f;
+
+}

@@ -1,0 +1,59 @@
+// VARIABLES
+$menu-color: #f3e9e7;
+
+// MIXINs para reutilizar estilos
+@mixin header-link {
+  color: $menu-color;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+@mixin header-border($size: 2px) {
+  border-bottom: solid $size $menu-color;
+}
+
+// APLICANDO BEM EN SCSS
+.header {
+  background-color: #00a7c7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+
+  &__logo {
+    @include header-link;
+    color:#feab6b ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 27px;
+    border-bottom:5px solid #f3e9e7;
+    margin-left: 9px;
+  }
+
+  &__logo-img{
+    width: 60px;
+    height: auto;
+  }
+
+  &__nav-list {
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__item-link {
+    @include header-link;
+
+    //indicamos cual es el estilo activo
+    &--is-active {
+      @include header-border($size: 3px);
+    }
+
+    &:hover {
+      @include header-border;
+    }
+  }
+}
